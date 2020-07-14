@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Car Valuate</title>
+    <title>Lezir - Responsive Bootstrap 4 Landing Page Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 4 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 4, premium, marketing, multipurpose" />
+    <meta content="Themesbrand" name="author" />
     <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- css -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/style.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -29,8 +32,8 @@
         <div class="container">
             <!-- LOGO -->
             <a class="navbar-brand logo" href="index.html">
-                <img src="{{ asset('images/logo-dark.png') }}" alt="" class="logo-dark" height="24" />
-                <img src="{{ asset('images/logo-light.png') }}" alt="" class="logo-light" height="24" />
+                <img src="images/logo-dark.png" alt="" class="logo-dark" height="24" />
+                <img src="images/logo-light.png" alt="" class="logo-light" height="24" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
@@ -47,32 +50,27 @@
                         <a href="#pricing" class="nav-link">Pricing</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav navbar-center">
-                    <li class="nav-item">
-                        <a href="{{ route('login') }}" class="nav-link">Log in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('register') }}" class="nav-link">Register</a>
-                    </li>
-                </ul>
-                {{-- <ul class="navbar-nav navbar-center">
                     <li class="nav-item">
                         <a href="#login" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Log in</a>
                     </li>
                     <li class="nav-item">
                         <a href="#login" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter-1">Register</a>
                     </li>
-                </ul> --}}
+                </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Hero Start -->
-    <section class="hero-1-bg" style="background-image: url({{ asset('images/hero-1-bg-img.png') }})" id="home">
+    <section class="hero-1-bg" style="background-image: url(images/hero-1-bg-img.png)" id="home">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -90,7 +88,7 @@
                 </div>
                 <div class="col-lg-6 col-md-10">
                     <div class=" mt-5 mt-lg-0">
-                        <img src="{{ asset('images/hero-1-img.png') }}" alt="" class="img-fluid d-block mx-auto">
+                        <img src="images/hero-1-img.png" alt="" class="img-fluid d-block mx-auto">
                     </div>
                 </div>
             </div>
@@ -168,7 +166,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="mb-4 mb-lg-0">
-                        <img src="{{ asset('images/features-img.png') }}" alt="" class="img-fluid d-block mx-auto">
+                        <img src="images/features-img.png" alt="" class="img-fluid d-block mx-auto">
                     </div>
                 </div>
 
@@ -187,7 +185,7 @@
         </div>
     </section>
 
-    <section class="section feather-bg-img" style="background-image: url({{ asset('images/features-bg-img-1.png') }})">
+    <section class="section feather-bg-img" style="background-image: url(images/features-bg-img-1.png)">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -204,7 +202,7 @@
                 </div>
                 <div class="col-lg-6 offset-lg-1">
                     <div class="mt-4 mt-lg-0">
-                        <img src="{{ asset('images/features-img-1.png') }}" alt="" class="img-fluid d-block mx-auto">
+                        <img src="images/features-img-1.png" alt="" class="img-fluid d-block mx-auto">
                     </div>
                 </div>
             </div>
@@ -240,7 +238,7 @@
                         <a href="#" class="btn btn-outline-primary pr-btn">Buy Now</a>
                         <div class="mt-4">
                             <div class="hero-bottom-img">
-                                <img src="{{ asset('images/pricing-bottom-bg.png') }}" alt="" class="img-fluid d-block mx-auto">
+                                <img src="images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
                             </div>
                         </div>
                     </div>
@@ -261,7 +259,7 @@
                         <a href="#" class="btn btn-primary pr-btn">Buy Now</a>
                         <div class="mt-4">
                             <div class="hero-bottom-img">
-                                <img src="{{ asset('images/pricing-bottom-bg.png') }}" alt="" class="img-fluid d-block mx-auto">
+                                <img src="images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
                             </div>
                         </div>
                     </div>
@@ -282,7 +280,7 @@
                         <a href="#" class="btn btn-outline-primary pr-btn">Buy Now</a>
                         <div class="mt-4">
                             <div class="hero-bottom-img">
-                                <img src="{{ asset('images/pricing-bottom-bg.png') }}" alt="" class="img-fluid d-block mx-auto">
+                                <img src="images/pricing-bottom-bg.png" alt="" class="img-fluid d-block mx-auto">
                             </div>
                         </div>
                     </div>
@@ -291,6 +289,60 @@
         </div>
     </section>
     <!-- Pricing End -->
+
+    <!-- Blog start -->
+    <section class="section" id="blog">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h3 class="title mb-3">Latest News</h3>
+                        <p class="text-muted font-size-15">Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cum soluta nobis eligendi cumque.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-box mb-4 mb-lg-0">
+                        <img src="images/blog/img-1.jpg" alt="" class="img-fluid d-block mx-auto rounded">
+                        <ul class="list-inline text-muted text-uppercase font-size-15 font-weight-medium mt-3 mb-2">
+                            <li class="list-inline-item mr-3"><i class="icon-size-15 icon mr-1" data-feather="calendar"></i> April 10 2020</li>
+                            <li class="list-inline-item"><i class="icon-size-15 icon mr-1" data-feather="user"></i> Admin</li>
+                        </ul>
+                        <a href="#" class="text-dark font-weight-bold h5">Best Traveling Place</a>
+                        <p class="text-muted font-size-15">Integer ante arcu accumsan a consectetuer eget posuere mauris praesent adipiscing phasellus ullamcorper ipsum rutrum punc.</p>
+                        <a href="#" class="text-primary font-weight-semibold">Learn More <span class="ml-2 right-icon">&#8594;</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box blog-box mb-4 mb-lg-0">
+                        <img src="images/blog/img-2.jpg" alt="" class="img-fluid d-block mx-auto rounded">
+                        <ul class="list-inline text-muted text-uppercase font-size-15 font-weight-medium mt-3 mb-2">
+                            <li class="list-inline-item mr-3"><i class="icon-size-15 icon mr-1" data-feather="calendar"></i> April 11 2020</li>
+                            <li class="list-inline-item"><i class="icon-size-15 icon mr-1" data-feather="user"></i> Admin</li>
+                        </ul>
+                        <a href="#" class="text-dark font-weight-bold h5">Private Meeting Room</a>
+                        <p class="text-muted font-size-15">Integer ante arcu accumsan a consectetuer eget posuere mauris praesent adipiscing phasellus ullamcorper ipsum rutrum punc.</p>
+                        <a href="#" class="text-primary font-weight-semibold">Learn More <span class="ml-2 right-icon">&#8594;</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box blog-box mb-4 mb-lg-0">
+                        <img src="images/blog/img-3.jpg" alt="" class="img-fluid d-block mx-auto rounded">
+                        <ul class="list-inline text-muted text-uppercase font-size-15 font-weight-medium mt-3 mb-2">
+                            <li class="list-inline-item mr-3"><i class="icon-size-15 icon mr-1" data-feather="calendar"></i> April 12 2020</li>
+                            <li class="list-inline-item"><i class="icon-size-15 icon mr-1" data-feather="user"></i> Admin</li>
+                        </ul>
+                        <a href="#" class="text-dark font-weight-bold h5">The Best Business Ideas</a>
+                        <p class="text-muted font-size-15">Integer ante arcu accumsan a consectetuer eget posuere mauris praesent adipiscing phasellus ullamcorper ipsum rutrum punc.</p>
+                        <a href="#" class="text-primary font-weight-semibold">Learn More <span class="ml-2 right-icon">&#8594;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog End -->
 
     <!-- Contact Us Start -->
     <section class="section bg-light" id="contact">
@@ -354,7 +406,7 @@
     <!-- Contact Us End -->
 
     <!-- Footer Start -->
-    <section class="footer" style="background-image: url({{ asset('images/footer-bg.png') }})">
+    <section class="footer" style="background-image: url(images/footer-bg.png)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -419,7 +471,7 @@
     <!-- Footer End -->
 
     <!-- login Modal Start -->
-    {{-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -463,11 +515,11 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!-- login Modal End -->
 
     <!-- Register Modal Start-->
-    {{-- <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="exampleModalCenter-1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
@@ -514,21 +566,21 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
     <!-- Register Modal Start-->
 
-
+    
     <!-- javascript -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/scrollspy.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrollspy.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
     <!-- feather icon -->
-    <script src="{{ asset('js/feather.js') }}"></script>
+    <script src="js/feather.js"></script>
     <!-- unicons icon -->
-    <script src="{{ asset('js/unicons.js') }}"></script>
+    <script src="js/unicons.js"></script>
     <!-- Main Js -->
-    <script src="{{ asset('js/landing.js') }}"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>
