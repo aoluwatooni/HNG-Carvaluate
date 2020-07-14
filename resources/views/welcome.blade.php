@@ -29,8 +29,8 @@
         <div class="container">
             <!-- LOGO -->
             <a class="navbar-brand logo" href="index.html">
-                <img src="{{ asset('images/logo-dark.png') }}" alt="" class="logo-dark" height="24" />
-                <img src="{{ asset('images/logo-light.png') }}" alt="" class="logo-light" height="24" />
+                <img src="{{ asset('images/logo-png.png') }}" alt="" class="logo-dark" height="24" />
+                <img src="{{ asset('images/logo-png.png') }}" alt="" class="logo-light" height="24" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
