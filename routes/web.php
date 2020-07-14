@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('landing');
 
 Auth::routes();
 
@@ -31,9 +31,5 @@ Route::get('/newregister', function () {
     return view('newregister');
 })->name('newregister');
 
-
-Route::get('/landing', function () {
-    return view('landing');
-})->name('landing');
 
 
