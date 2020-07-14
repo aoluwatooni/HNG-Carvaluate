@@ -101,7 +101,7 @@
                             <div class="icon-xxl uim-icon-primary"><i class="uim uim-cube"></i></div>
                         </div>
                         <h3 class="">Why Choose Us ?</h3>
-                        <p class="text-muted mb-4">Nam libero tempore cum soluta as nobis est eligendi optio cumque nihile impedite quo minus id quod maxime.</p>
+                        <p class="text-muted mb-4">We provide insights to help you make the best sale.</p>
                         <a href="#" class="btn btn-outline-primary">Learn More</a>
                     </div>
                 </div>
