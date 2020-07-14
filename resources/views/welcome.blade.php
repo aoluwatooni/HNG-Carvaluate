@@ -76,21 +76,14 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
-                    <h1 class="hero-1-title text-dark font-weight-bold text-shadow mb-4">Creative Landing Page</h1>
+                    <h1 class="hero-1-title text-dark font-weight-bold text-shadow mb-4">Car Valuate</h1>
                     <div class="w-75 mb-5 mb-lg-0">
-                        <p class="text-muted mb-5 pb-5 font-size-17">A creative & modern landing page with Lezir template & We love make things amazing.</p>
-                        <p class=""><span class="font-size-20 mr-2">🥳️</span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur that is fugit.</p>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Enter  email...">
-                                <button type="submit" class="btn btn-primary">Subscribe</button>
-                            </form>
-                        </div>
+                        <p class="text-muted mb-5 pb-5 font-size-17">CarValuate is a Web Application that uses trained Machine Learning Models to predict Car Prices.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-10">
                     <div class=" mt-5 mt-lg-0">
-                        <img src="{{ asset('images/hero-1-img.png') }}" alt="" class="img-fluid d-block mx-auto">
+                        <img src="{{ asset('images/car.png') }}" alt="" class="img-fluid d-block mx-auto">
                     </div>
                 </div>
             </div>
