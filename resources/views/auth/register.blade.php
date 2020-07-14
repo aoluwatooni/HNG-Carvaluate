@@ -21,8 +21,8 @@
             <div class="img-holder">
                 <div class="bg"></div>
                 <div class="info-holder">
-                    <h3>Get more things done with Loggin platform.</h3>
-                    <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                    <h3>Predict Your Used Car Price with Carvaluate.</h3>
+                    <!-- <p>Access to the most powerfull tool in the entire design and web industry.</p> -->
                     <img src="{{ asset('images/graphic4.svg') }}" alt="">
                 </div>
             </div>
