@@ -12,8 +12,8 @@
     <div class="form-body" class="container-fluid">
         <div class="website-logo">
             <a href="{{ route('landing') }}">
-                <div class="logo">
-                    <img class="logo-size" src="{{ asset('images/logo-light.svg') }}" alt="">
+                <div class="">
+                    <img class="logo-size" src="{{ asset('images/logo.png') }}" alt="">
                 </div>
             </a>
         </div>
@@ -31,8 +31,8 @@
                     <div class="form-items">
                         <div class="website-logo-inside">
                             <a href="{{ route('landing') }}">
-                                <div class="logo">
-                                    <img class="logo-size" src="{{ asset('images/logo-light.svg') }}" alt="">
+                                <div class="">
+                                    <img class="logo-size" src="{{ asset('images/logo.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
