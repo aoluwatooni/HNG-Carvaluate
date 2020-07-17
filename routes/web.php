@@ -32,4 +32,6 @@ Route::get('/newregister', function () {
 })->name('newregister');
 
 
-
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
