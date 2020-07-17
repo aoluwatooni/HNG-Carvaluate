@@ -23,7 +23,8 @@
         <div class="row h-100 align-items-center">
             <div class="col-md-5">
                 <h2 class="mb-5">Please Input Car Data</h2>
-                <form>
+                <form method="POST" action="{{ route('sendpredict') }}">
+                    @csrf
                     <div class="form-group">
                       <label for="carmodel">Car Model</label>
                       <input type="text" class="form-control" id="carmodel"  placeholder="Enter Car Model">
@@ -35,16 +36,18 @@
                             <option>2</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="transmission">Transmission Type</label>
-                        <select class="form-control" id="transmission">
+                        <label for="fueltype">Fuel Type</label>
+                        <select class="form-control" id="fueltype">
                             <option>1</option>
                             <option>2</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="fueltype">Fuel Type</label>
-                        <select class="form-control" id="fueltype">
+                        <label for="transmission">Transmission Type</label>
+                        <select class="form-control" id="transmission">
                             <option>1</option>
                             <option>2</option>
                         </select>
