@@ -46,7 +46,12 @@ class HomeController extends Controller
             ]
         ]);
 
-        dd($response->body());
+        $result = json_decode($response->body())->prediction;
+
+
+        // dd($result);
+
+        return view('results')->with('result', $result);
 
     }
 
