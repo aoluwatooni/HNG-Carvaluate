@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +36,9 @@ Route::get('/newregister', function () {
 })->name('newregister');
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/input', function () {
+    return view('input');
+})->name('input');
+
+
+Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict');
