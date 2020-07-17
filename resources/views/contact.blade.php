@@ -5,9 +5,21 @@
 
   <!-- Contact Form -->
   <div style="background: #ebebeb;" class="container-fluid h-100">
+
+
     <div class="row h-100 align-items-center d-flex justify-content-around">
+
         <div class="col-md-4 mr-1">
                   <h1 class="mb-6">Have Questions? We have you covered.</h1>
+
+                    @if(Session::has('message'))
+                        <p class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ Session::get('message') }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </p>
+                    @endif
                   <form action="{{ route('sendemail') }}" method="POST">
                       @csrf
 

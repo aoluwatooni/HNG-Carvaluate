@@ -36,6 +36,7 @@
 </head>
 <body>
 
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-bar static-top">
         <div class="container">
@@ -49,6 +50,9 @@
                     <a class="nav-link" href="{{ route('landing') }}">Home
                         <span class="sr-only">(current)</span>
                     </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('input') }}">Predict</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
@@ -89,16 +93,14 @@
     </nav>
     <!-- Navbar end -->
 
-
-
-
     @yield('content')
 
 
-<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
 
     @yield('footer')
 
