@@ -19,8 +19,11 @@ class MailController extends Controller
         $message = $request->message;
 
         Mail::to($from_email)
-            ->cc('hngcarvaluate@gmail.com')
             ->send(new ContactMail);
+
+        Mail::to('hngcarvaluate@gmail.com')
+            ->send(new ContactMail);
+
 
 
     }
