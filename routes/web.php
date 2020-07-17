@@ -38,6 +38,8 @@ Route::get('/results', function () {
 
 Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict');
 
+Route::post('/sendmail', 'MailController@sendmail')->name('sendemail');
+
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
