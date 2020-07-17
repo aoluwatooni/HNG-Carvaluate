@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
+use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -24,7 +25,9 @@ class MailController extends Controller
         Mail::to('hngcarvaluate@gmail.com')
             ->send(new ContactMail);
 
+        session()->flash('message', 'Email Sent Successfully');
 
+        return redirect()->route('contact');
 
     }
 
