@@ -48,6 +48,8 @@ class HomeController extends Controller
 
         $result = json_decode($response->body())->prediction;
 
+        $result = substr($result, 8, 7);
+
 
         // dd($result);
 
