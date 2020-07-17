@@ -24,24 +24,3 @@
     background: rgba(179,33,46,1);
 }
 
-/* body */
-.contact {
-    position: relative;
-    width: 100%;
-    padding: 150px 0;
-    background: #ebebeb;
-}
-
-.contact h1 {
-    font-weight: 600 !important;
-    font-size: 24px;
-    margin: 16px 0;
-}
-
-.contact img {
-    margin: 30px 0;
-    position: relative;
-    width: 450px;
-    height: 350px;
-    float: right;
-}

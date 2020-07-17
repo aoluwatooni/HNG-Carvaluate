@@ -44,5 +44,8 @@ Route::get('/results', function () {
     return view('results');
 })->name('results');
 
-
 Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');

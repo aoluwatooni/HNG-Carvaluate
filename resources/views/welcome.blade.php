@@ -1,74 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+    @extends('pagecontainer')
 
-<head>
-    <meta charset="utf-8" />
-    <title>Car Valuate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-
-    <!-- css -->
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+    @section('header')
     <link href="{{ asset('css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('css/style.min.css') }}" rel="stylesheet" type="text/css" />
 
-            <!-- Custom Style -->
-            <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    @endsection
 
-            <!-- Custom Font -->
-            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   @section('content')
 
-</head>
-
-<body>
-
-    <!-- Loader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner"></div>
-        </div>
-    </div>
-
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-dark nav-bar static-top">
-            <div class="container">
-              <a class="navbar-brand" href="#"><img src="{{ asset('images/logo-sm.png') }}" height="30" alt=""></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link brand-btn" href="{{ route('login') }}">Sign In</a>
-                    </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <!-- Navbar end -->
 
     <!-- Hero Start -->
-    <section class="hero-1-bg" style="background-image: url({{ asset('images/hero-1-bg-img.png') }})" id="home">
+    <section class="hero-1-bg h-100" style="background-image: url({{ asset('images/hero-1-bg-img.png') }})" id="home">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -87,10 +29,12 @@
         </div>
     </section>
     <!-- Hero End -->
+   @endsection
 
 
 
-    <!-- javascript -->
+    @section('footer')
+        <!-- javascript -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/scrollspy.min.js') }}"></script>
@@ -101,6 +45,4 @@
     <script src="{{ asset('js/unicons.js') }}"></script>
     <!-- Main Js -->
     <script src="{{ asset('js/landing.js') }}"></script>
-
-</body>
-</html>
+    @endsection
