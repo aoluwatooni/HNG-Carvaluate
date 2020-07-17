@@ -1,7 +1,11 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,13 +27,19 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/newlogin', function () {
-    return view('newlogin');
-})->name('newlogin');
 
-Route::get('/newregister', function () {
-    return view('newregister');
-})->name('newregister');
+Route::get('/input', function () {
+    return view('input');
+})->name('input');
 
+Route::get('/results', function () {
+    return view('results');
+})->name('results');
 
+Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict');
 
+Route::post('/sendmail', 'MailController@sendmail')->name('sendemail');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');

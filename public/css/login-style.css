@@ -131,9 +131,6 @@ html {
 	z-index: -1
 }
 @media (min-height: 700px) {
-	.img-holder {
-		position: fixed
-	}
 	.website-logo {
 		position: fixed
 	}
