@@ -56,10 +56,10 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link brand-btn" href="#">Sign In</a>
+                        <a class="nav-link brand-btn" href="{{ route('login') }}">Sign In</a>
                     </li>
                 </ul>
               </div>
@@ -75,6 +75,7 @@
                     <h1 class="hero-1-title text-dark font-weight-bold text-shadow mb-4">Car Valuate</h1>
                     <div class="w-75 mb-5 mb-lg-0">
                         <p class="text-muted mb-5 pb-5 font-size-17">CarValuate is a Web Application that uses trained Machine Learning Models to predict Car Prices.</p>
+                        <a href="{{ route('input') }}" class="btn text-white btn-primary">PREDICT</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-10">
