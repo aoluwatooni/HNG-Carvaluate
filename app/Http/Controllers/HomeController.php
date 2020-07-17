@@ -12,10 +12,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
-    // }
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
     /**
      * Show the application dashboard.
@@ -49,9 +49,6 @@ class HomeController extends Controller
         $result = json_decode($response->body())->prediction;
 
         $result = substr($result, 8, 7);
-
-
-        // dd($result);
 
         return view('results')->with('result', $result);
 

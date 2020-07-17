@@ -27,14 +27,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/newlogin', function () {
-    return view('newlogin');
-})->name('newlogin');
-
-Route::get('/newregister', function () {
-    return view('newregister');
-})->name('newregister');
-
 
 Route::get('/input', function () {
     return view('input');
