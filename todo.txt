@@ -1,9 +1,0 @@
-Splash Page
-Sign-in page
-Login/Signup - 2 different
-Dashboard Page
-Predict result page
-Prediction form page
-Landing page
-Dashboard
-Credits page - [Just showing app builders and names]
