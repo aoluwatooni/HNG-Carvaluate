@@ -1,0 +1,357 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.nav-bar {
+    background: #000 !important;
+    padding: 12px 0;
+    color: #fff;
+}
+
+.nav-bar li {
+    margin-right: 16px;
+}
+
+.brand-btn {
+    padding: 8px 24px !important;
+    color: #fff;
+    border-radius: 10px;
+    background: rgba(179,33,46,1);
+}
+
+/* body */
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 150px 0;
+    background: #ebebeb;
+}
+
+.contact h1 {
+    font-weight: 600 !important;
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.contact img {
+    margin: 30px 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    float: right;
+}
+
+/* Landing Page Styles */
+/* Default */
+.content {
+    position: relative;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background: #000;
+    color: #fff;
+}
+
+.header p {
+    color: #ebebeb;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.header img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+    transition: all .5s;
+    float: right;
+}
+
+/* How it works */
+.brand-color {
+    color: rgba(179,33,46,1);
+}
+
+.how-it-works {
+    padding-top: 0;
+    padding-bottom: 200px;
+    /* height: 700px; */
+    /* background: #ebebeb; */
+    background: url(../img/tire_tracks.png) center no-repeat, rgba(220, 220, 220, 0.63);
+    background-size: cover;
+}
+
+.how-it-works h2 {
+    font-weight: bold !important;
+}
+
+.flat-tire {
+    width: 150px;
+    height: 180px;
+    margin-left: 50px;
+    margin-right: -100px;
+    padding-top: 40px;
+}
+
+.gradient {
+    width: 100%;
+    padding: 80px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.99) 60%, rgba(210, 210, 210, 0.63) 90%)
+}
+
+.gradient i {
+    font-size: 1.5rem;
+    margin-right: 8px;
+    margin-top: 12px;
+}
+
+gradient p {
+    font-size: 11px;
+}
+
+gradient h2 {
+    font-weight: 800 !important;
+    font-size: 16px;
+}
+
+.btn-right {
+    position: absolute;
+    float: right;
+    top: 320px;
+    right: 50px;
+    /* padding: 12px 16px !important; */
+}
+
+.push-down {
+    position: absolute;
+    z-index: 1;
+    margin-left: -80px;
+    /* margin-bottom: -60px; */
+}
+
+.push-down span {
+    margin-right: 10px;
+}
+
+.push-down p {
+    font-size: 12px;
+    margin-left: 50px;
+    padding-bottom: 40px;
+}
+
+.push-down img {
+    /* position: absolute; */
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 150px;
+    transition: .5s;
+    z-index: 1;
+    left: 80px;
+    top: 50px;
+}
+
+.dark-bg {
+    /* position: absolute; */
+    background: #212121;
+    padding-left: 120px;
+    padding-top: 50px;
+    padding-right: 30px;
+    left: 600px;
+    top: -350px;
+    /* margin-right: 10px; */
+}
+
+
+
+.mobile {
+    position: relative;
+}
+
+.mobile img {
+    width: 100%;
+    height: 90%;
+}
+
+.dark-bg-m {
+    position: relative;
+    background: #212121;
+    padding: 20px 40px;
+}
+
+.dark-bg-m h3 {
+    font-size: 20px;
+}
+
+.dark-bg-m p {
+    font-size: 12px;
+}
+
+/* ML Section */
+
+.ml-section {
+    background: #000;
+    padding-top: 250px;
+    padding-bottom: 60px;
+    /* margin-top: 250px !important; */
+    color: #fff;
+}
+
+
+/* built for everyone */
+.built {
+    background: #261a2e;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.built img {
+    width: 100%;
+    height: 100%;
+}
+
+.built p {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Team members */
+.team {
+    background: rgba(220, 220, 220, 0.63);
+    padding: 80px 0;
+}
+
+.team h2 {
+    font-weight: bold !important;
+    margin-top: 200px;
+}
+
+.team p {
+    font-size: 12px;
+}
+
+.team img {
+    /* position: relative; */
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.team i {
+    size: 1rem;
+    margin-right: 16px;
+}
+
+.team a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.team a:hover {
+    color: #261a2e;
+    transition: all .5s;
+}
+
+/* Quick links */
+.quick-link {
+    padding: 40px;
+}
+
+.quick-link ul {
+    list-style-type: none;
+    margin-top: 12px;
+}
+
+.quick-link li {
+    margin-bottom: 10px;
+}
+
+.quick-link h4 {
+    font-weight: bold !important;
+}
+
+
+/* footer */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:1199px){
+    
+}
+
+@media screen and (max-width:991px){
+     
+}
+
+@media screen and (max-width:767px){
+    .btn-right {
+        top: 500px !important;
+    }
+}
+
+@media screen and (max-width:485px){
+    .push-down {
+        position: relative !important;
+        z-index: 1;
+        /* margin-left: -40px !important; */
+        /* margin-bottom: -60px; */
+    } 
+    .dark-bg {
+        position: relative !important;
+        background: #212121;
+        padding-left: 60px !important;
+        padding-top: 30px !important;
+        padding-right: 60px !important;
+        /* margin-right: 10px; */
+    }
+
+    .header h1 {
+        font-size: 18px !important;
+    }
+
+    .header p {
+        padding: 12px 0;
+        font-size: 11px;
+    }
+
+    .header button {
+        font-size: 11px;
+    }
+
+    .brand-btn {
+        font-size: 10px;
+    }
+
+    .how-it-works {
+        padding-bottom: 0;
+    }
+
+    .team h2 {
+        font-weight: bold !important;
+        margin-top: 0;
+    }
+
+    .btn-right {
+        top: 500px !important;
+    }
+}
