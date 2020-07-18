@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container h-100">
-    <div class="row h-100 align-items-center d-flex justify-content-around">
+    <div class="row h-100 mt-5 align-items-center d-flex justify-content-around">
         <div class="col-md-5">
             <h2 class="mb-5" style="color: #b32d2e;">Please Input Car Data</h2>
             <form method="POST" action="{{ route('sendpredict') }}">
