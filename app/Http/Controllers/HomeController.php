@@ -31,11 +31,25 @@ class HomeController extends Controller
 
         $user_active = Auth::user();
 
-        $predictions = Prediction::where('user_id', '=', $user_active->id)->firstOrFail();
+        $predictions = Prediction::all();
 
-        $predictions = $predictions->all();
+        // $predictions = Prediction::where('user_id', '=', $user_active->id)->get();
+
+        // $predictions = $predictions->all();
+
+        // dd($predictions);
 
         return view('home')->with('predictions', $predictions);
+    }
+
+
+    public function destroy($id)
+    {
+        $predict = Prediction::where('id', '=', $id)->firstOrFail();
+
+        $predict->delete();
+
+        return  redirect()->route('home');
     }
 
 
