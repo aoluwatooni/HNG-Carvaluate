@@ -47,18 +47,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item {{ request()->is('/') ? ' active' : '' }}">
                         <a class="nav-link" href="{{ route('landing') }}">Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('home') ? ' active' : '' }}">
                         <a class="nav-link" href="{{ route('home') }}">Dashboard</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('input') ? ' active' : '' }}">
                         <a class="nav-link" href="{{ route('input') }}">Predict</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('contact') ? ' active' : '' }}">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>
