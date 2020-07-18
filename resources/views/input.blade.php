@@ -37,7 +37,7 @@
 
                 <div class="form-group">
                     <label for="mileage">Car Mileage (in Km)</label>
-                    <input required type="" name="Kilometers_Driven" class="form-control" id="mileage" aria-describedby="mileageHelp" placeholder="Enter Mileage">
+                    <input required type="number" min="10" max="4828032" name="Kilometers_Driven" class="form-control" id="mileage" aria-describedby="mileageHelp" placeholder="Enter Mileage">
                     <small id="mileageHelp" class="form-text text-muted">Please input in figures</small>
                 </div>
 
