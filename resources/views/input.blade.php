@@ -10,7 +10,7 @@
                 @csrf
                 <div class="form-group">
                   <label for="carmodel">Car Model</label>
-                  <input required type="text" name="carmodel" class="form-control" id="carmodel"  placeholder="Enter Car Model">
+                  <input required type="text" name="Model" class="form-control" id="carmodel"  placeholder="Enter Car Model">
                 </div>
 
                 <div class="form-group">

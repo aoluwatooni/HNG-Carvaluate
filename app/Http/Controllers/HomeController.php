@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Auth;
+use App\Prediction;
 
 class HomeController extends Controller
 {
@@ -47,8 +49,40 @@ class HomeController extends Controller
         ]);
 
         $result = json_decode($response->body())->prediction;
-
         $result = substr($result, 8, 7);
+
+        if($request->FuelType == 0)
+        {
+            $fuel = "Compressed Natural Gas";
+        }
+        else if($request->FuelType == 1)
+        {
+            $fuel = "Diesel";
+        }
+        else {
+            $fuel = "Petrol";
+        }
+
+        if($request->TransmissionType == 0)
+        {
+            $tt = "Manual";
+        }
+        else {
+            $tt = "Automatic";
+        }
+
+        $data = [
+            'user_id' => Auth::user()->id,
+            'model' => $request->Model,
+            'year' => $request->Year,
+            'fuel' => $fuel,
+            'tt' => $tt,
+            'seats' => $request->Seats,
+            'km' => $request->Kilometers_Driven,
+            'price' => $result
+        ];
+
+        Prediction::create($data);
 
         return view('results')->with('result', $result);
 

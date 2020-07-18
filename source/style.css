@@ -1,0 +1,49 @@
+/* Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.form{
+  -webkit-box-shadow: 6px 10px 17px 0px rgb(255, 255, 255);
+  -moz-box-shadow: 6px 10px 17px 0px rgba(255,0,0,0.35);
+  box-shadow: 6px 10px 17px 0px rgba(255,0,0,0.35);
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+/* Navbar */
+.nav-bar {
+    background-color: #ffffff;
+    padding: 12px 0;
+    
+}
+@media screen and (max-width: 800px){
+  .img-fluid{
+    display: none;
+  }
+}
+
+
+/* body */
+.contact {
+    position: relative;
+    width: 100%;
+    padding: 150px 0;
+    background: #ebebeb;
+}
+
+.contact h1 {
+    font-weight: 600 !important;
+    font-size: 24px;
+    margin: 16px 0;
+}
+
+.contact img {
+    margin: 30px 0;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    float: right;
+}
