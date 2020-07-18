@@ -30,13 +30,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/input', function () {
     return view('input');
-})->name('input');
+})->name('input')->middleware('auth');
 
 Route::get('/results', function () {
     return view('results');
-})->name('results');
+})->name('results')->middleware('auth');
 
-Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict');
+Route::post('/predict', 'HomeController@sendpredict')->name('sendpredict')->middleware('auth');
 
 Route::post('/sendmail', 'MailController@sendmail')->name('sendemail');
 
