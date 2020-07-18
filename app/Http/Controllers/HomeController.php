@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Auth;
 use App\Prediction;
 
+use function GuzzleHttp\json_decode;
+
 class HomeController extends Controller
 {
     /**
@@ -26,7 +28,28 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $user_active = Auth::user();
+
+        $predictions = Prediction::all();
+
+        // $predictions = Prediction::where('user_id', '=', $user_active->id)->get();
+
+        // $predictions = $predictions->all();
+
+        // dd($predictions);
+
+        return view('home')->with('predictions', $predictions);
+    }
+
+
+    public function destroy($id)
+    {
+        $predict = Prediction::where('id', '=', $id)->firstOrFail();
+
+        $predict->delete();
+
+        return  redirect()->route('home');
     }
 
 
@@ -34,6 +57,10 @@ class HomeController extends Controller
 
         $this->validate($request, [
             'Kilometers_Driven' => 'required|integer',
+            'Year' => 'required|integer',
+            'FuelType' => 'required',
+            'TransmissionType' => 'required',
+            'Seats' => 'required'
         ]);
 
         $response = Http::post('https://carvaluateapi.herokuapp.com/predict', [

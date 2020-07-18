@@ -13,6 +13,7 @@
 
     <!-- Custom Font  deffer -->
     <link  href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f7c0c6f83.js" crossorigin="anonymous"></script>
 
     @yield('header')
 
@@ -46,15 +47,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('landing') }}">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                    <li class="nav-item {{ request()->is('/') ? ' active' : '' }}">
+                        <a class="nav-link" href="{{ route('landing') }}">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('home') ? ' active' : '' }}">
+                        <a class="nav-link" href="{{ route('home') }}">Dashboard</a>
+                    </li>
+                    <li class="nav-item {{ request()->is('input') ? ' active' : '' }}">
                         <a class="nav-link" href="{{ route('input') }}">Predict</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('contact') ? ' active' : '' }}">
                     <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                     </li>
                 </ul>

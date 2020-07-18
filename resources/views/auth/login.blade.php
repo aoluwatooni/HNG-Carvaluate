@@ -6,7 +6,7 @@
     <div class="website-logo">
         <a href="{{ route('landing') }}">
             <div class="">
-                <img class="logo-size" src="{{ asset('images/logo.png') }}" alt="">
+                <img class="logo-size" src="{{ asset('images/logo-sm.png') }}" alt="">
             </div>
         </a>
     </div>
@@ -25,7 +25,7 @@
                     <div class="website-logo-inside">
                         <a href="{{ route('landing') }}">
                             <div class="">
-                                <img class="logo-size w-100" src="{{ asset('images/logo.png') }}" alt="">
+                                <img class="logo-size w-100" src="{{ asset('images/logo-sm.png') }}" alt="">
                             </div>
                         </a>
                     </div>
