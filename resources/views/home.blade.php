@@ -26,6 +26,7 @@
                                 <th>Year</th>
                                 <th>Price</th>
                                 <th>Fuel</th>
+                                <th>Mileage</th>
                                 <th>Transmission</th>
                                 <th>Seats</th>
                                 <th class="text-center" style="width: 100px;">Actions</th>
@@ -41,6 +42,7 @@
                                         <td>{{ $prediction->year }}</td>
                                         <td>&#8358;  {{ number_format($prediction->price, 2) }}</td>
                                         <td>{{ $prediction->fuel }}</td>
+                                        <td>{{ $prediction->km }}</td>
                                         <td>{{ $prediction->tt }}</td>
                                         <td>{{ $prediction->seats }}</td>
                                         <td>
