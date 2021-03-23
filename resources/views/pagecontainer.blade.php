@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/login-style.css') }}">
 
     <!-- Custom Style -->
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
 
     <!-- Custom Font  deffer -->
     <link  href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
