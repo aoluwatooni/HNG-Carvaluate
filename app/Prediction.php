@@ -9,7 +9,7 @@ class Prediction extends Model
      // protected $table = 'predictions';
 
      protected $fillable = [
-         'user_id','model', 'km', 'year', 'fuel', 'tt', 'seats', 'price'
+         'user_id', 'model', 'km', 'year', 'fuel', 'tt', 'seats', 'price'
      ];
 
      protected $hidden = [
